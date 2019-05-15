@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="d-flex flex-align-center" id="main-container">
+		<div class="d-flex fb-60">
+			<div
+				id="drawing-container"
+				onmousedown="drawOn()"
+				onmouseup="drawOff()"
+				onmousemove="draw()">
+			</div>
+		</div>
+
+		<div class="fb-40" id="controls-container">
+			<h5>Draw Shape</h5>
+			<div class="flex flex-align-center pb-1">
+				<button class="shape-btn" style="background: black; color: white" onclick="changeShape('x')">X</button>
+				<button class="shape-btn" style="background: red; color: white" onclick="changeShape('o')">O</button>
+				<button class="shape-btn" style="background: blue; color: white" onclick="changeShape('#')">#</button>
+				<button class="shape-btn" style="background: green; color: white" onclick="changeShape('@')">@</button>
+				<button class="shape-btn" style="background: gold; color: white" onclick="changeShape('$')">$</button>
+			</div>
+
+			<h5>Draw Color</h5>
+			<div class="flex flex-align-center pb-1">
+				<button class="color-btn" style="background: black; color: white" onclick="changeColor('black')">black</button>
+				<button class="color-btn" style="background: red; color: white" onclick="changeColor('red')">red</button>
+				<button class="color-btn" style="background: blue; color: white" onclick="changeColor('blue')">blue</button>
+				<button class="color-btn" style="background: green; color: white" onclick="changeColor('green')">green</button>
+				<button class="color-btn" style="background: gold; color: white" onclick="changeColor('gold')">gold</button>
+			</div>
+
+			<button id="reset-btn" style="background: green; color: white" onclick="clearIt()">Reset</button>
+		</div>
+	</div>
+<script src="index.js"></script>
+</body>
+</html>

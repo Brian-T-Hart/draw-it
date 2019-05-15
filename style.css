@@ -1,0 +1,73 @@
+body {
+	background: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+h5 {
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.color-btn, .shape-btn, #reset-btn {
+	padding: 5px;
+	width: 60px;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.fb-40 {
+	flex-basis: 40%;
+}
+
+.fb-60 {
+	flex-basis: 60%;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-align-right {
+	align-items: flex-end;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.pb-1 {
+	padding-bottom: 1rem;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+#controls-container {
+	padding: 20px;
+}
+
+#drawing-container {
+	background: #fff;
+	border: 5px solid silver;
+	border-radius: 5%;
+	height: 80vh;
+	margin: auto;
+	width: 90%;
+}
+
+#main-container {
+	height: 100vh;
+	margin: auto;
+	width: 90vw;
+}
