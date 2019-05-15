@@ -1,6 +1,7 @@
 var drawing = false;
 var drawColor = 'black';
 var drawShape = 'X';
+var drawSize = '8px';
 var drawingContainer = document.getElementById('drawing-container');
 
 function changeColor(color) {
@@ -9,6 +10,10 @@ function changeColor(color) {
 
 function changeShape(shape) {
 	drawShape = shape;
+}
+
+function changeSize(size) {
+	drawSize = size;
 }
 
 function drawOn() {
@@ -30,6 +35,7 @@ function markIt(x, y) {
 	el.style.left = x + 'px';
 	el.style.top = y + 'px';
 	el.style.color = drawColor;
+	el.style.fontSize = drawSize;
 	drawingContainer.append(el);
 }
 

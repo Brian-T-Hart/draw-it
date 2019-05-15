@@ -13,10 +13,11 @@ h5 {
 	font-size: 16px;
 	letter-spacing: 2px;
 	padding: 5px;
-	margin-bottom: 10px;
+	margin: 10px 0;
 }
 
-.color-btn, .shape-btn, #reset-btn {
+.color-btn, .shape-btn, .size-btn, #reset-btn {
+	border-radius: 5px;
 	padding: 5px;
 	width: 60px;
 }
@@ -47,6 +48,10 @@ h5 {
 
 .pb-1 {
 	padding-bottom: 1rem;
+}
+
+.mt-1 {
+	margin-top: 1rem;
 }
 
 .w-50 {
